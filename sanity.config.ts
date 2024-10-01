@@ -10,7 +10,7 @@ export default defineConfig({
   name: 'default',
   title: 'Day one with Sanity',
 
-  projectId: 'ro3hvzt4',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID as string,
   dataset: 'production',
 
   plugins: [
